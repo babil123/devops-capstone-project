@@ -84,7 +84,9 @@ http://<EC2-PUBLIC-IP>:5000
 ## 🛠️ How To Run Manually
 
 cd app 
+
 docker build -t devops-capstone-app .
+
 docker run -d -p 5000:5000 devops-capstone-app
 
 
