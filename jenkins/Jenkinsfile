@@ -12,11 +12,10 @@ pipeline {
             }
         }
 
-        stage('Stop Existing Container') {
+        stage('Stop & Remove Old Container') {
             steps {
                 sh '''
-                docker ps -q --filter "publish=5000" | xargs -r docker stop
-                docker ps -aq --filter "publish=5000" | xargs -r docker rm
+                docker rm -f devops-capstone || true
                 '''
             }
         }
