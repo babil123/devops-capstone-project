@@ -87,7 +87,9 @@ cd app
 docker build -t devops-capstone-app .
 docker run -d -p 5000:5000 devops-capstone-app
 
-📈 Future Enhancements
+
+
+## 📈 Future Enhancements
 
 Terraform-based Infrastructure Automation
 
@@ -99,7 +101,8 @@ Monitoring using Prometheus & Grafana
 
 Logging using ELK Stack
 
-🎯 Key Learnings
+
+## 🎯 Key Learnings
 
 Jenkins CI/CD Pipeline design
 
